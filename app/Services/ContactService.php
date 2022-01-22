@@ -5,16 +5,15 @@ namespace App\Services;
 use App\Contact;
 
 
-class ContactService
-{
-	
-	public static function findByName(): Contact
-	{
-		// queries to the db
-	}
+		
+		$ip = "192.168.1.1";
 
-	public static function validateNumber(string $number): bool
-	{
-		// logic to validate numbers
-	}
-}
+		
+//COMANDO PARA VALIDAR COSAS// POR FALTA DE TIEMPO 
+		if (filter_var($ip, FILTER_VALIDATE_IP)){
+			echo "<p> Direccion IP VALIDA</p>";
+		}
+				else {
+					echo "<p> IP NO VALIDA</p>";
+				}
+	

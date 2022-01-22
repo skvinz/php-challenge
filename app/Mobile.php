@@ -17,7 +17,7 @@ class Mobile
 	}
 
 
-	public function makeCallByName($name = '')
+	public function makeCallByName($name = 'Nombre')
 	{
 		if( empty($name) ) return;
 
